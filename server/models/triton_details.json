@@ -1,0 +1,93 @@
+{
+	"id": "4128efe1-83de-43ab-aa4b-e366348d6b3c",
+	"fields": [
+		{
+			"name": "id_triton_details",
+			"type": "number",
+			"read": true,
+			"write": false,
+			"primary": true,
+			"unique": true,
+			"required": true,
+			"autoIncrement": true,
+			"component": "input"
+		},
+		{
+			"name": "lat",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "long",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "speed",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "temp",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "signal",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "version",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "apn",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "ip",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "created",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "datePicker"
+		}
+	],
+	"relations": [
+		{
+			"type": "belongsTo",
+			"field": "id_triton",
+			"reference": {
+				"entity": "triton",
+				"field": "id_triton"
+			}
+		}
+	],
+	"queries": []
+}

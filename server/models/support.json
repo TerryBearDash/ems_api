@@ -1,0 +1,55 @@
+{
+	"id": "3af70be2-df4a-40ca-9674-96c4bcc1ab38",
+	"fields": [
+		{
+			"name": "id_support",
+			"type": "number",
+			"read": true,
+			"write": false,
+			"primary": true,
+			"unique": true,
+			"required": true,
+			"autoIncrement": true,
+			"component": "input"
+		},
+		{
+			"name": "type",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "messgae",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "status",
+			"type": "number",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "created",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"component": "datePicker"
+		}
+	],
+	"relations": [
+		{
+			"type": "belongsTo",
+			"field": "id_profile",
+			"reference": {
+				"entity": "profile",
+				"field": "id_profile"
+			}
+		}
+	],
+	"queries": []
+}

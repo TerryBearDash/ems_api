@@ -1,0 +1,23 @@
+{
+	"89ede52f-61cb-4e09-85f4-654bed5fe3f6": "mailjet_campaign",
+	"ea9f508e-00a1-4a20-81aa-e838324a06f3": "mailjet_contact",
+	"0202c00f-54fe-4a47-86cb-894d6ee37ece": "mailjet_message",
+	"52d52c04-050f-4ba8-8ee6-cab43cc5850c": "mailjet_statistic",
+	"39025401-f8b9-4076-9fce-884a04071f3e": "mailjet_template",
+	"fd89f4e7-9098-45e9-b9d9-c5bf3910a7ed": "mailjet_user",
+	"e05855cb-a080-43d5-afd1-c23b0ce3f641": "user",
+	"9d092fc7-f4ea-474b-b999-ed813cc23318": "user_permission",
+	"e6f07e19-c711-433c-bfb4-1eaa0e338757": "user_role",
+	"df8a0008-0327-4e68-b6bd-e3fbe685431b": "user_token",
+	"e4d10049-35e0-4bbf-984d-97111eda3ae3": "social_account",
+	"7a4040ef-a821-4fc7-8059-bd4a9b2a0a09": "audit",
+	"f57d3860-0c60-4562-b5e1-34c04f5fe415": "deleted_users",
+	"9265d4a5-5378-468f-843a-58885e8a0c9a": "locomotives",
+	"df70e91a-a593-4f03-b90f-0d1a81e58370": "profile",
+	"f3a17bd1-340c-4501-82cf-493f7276ac21": "rear",
+	"8dd25f06-2807-4a15-a165-4b6f5fe3b130": "rear_details",
+	"3af70be2-df4a-40ca-9674-96c4bcc1ab38": "support",
+	"6b0644fe-0113-4040-971b-4d31784be368": "triton",
+	"4128efe1-83de-43ab-aa4b-e366348d6b3c": "triton_details",
+	"e5a5553b-cba9-43f6-aabf-ce21ab5b06b7": "log"
+}

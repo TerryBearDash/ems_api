@@ -1,0 +1,99 @@
+{
+	"id": "f57d3860-0c60-4562-b5e1-34c04f5fe415",
+	"fields": [
+		{
+			"name": "id_deleted_users",
+			"type": "number",
+			"read": true,
+			"write": false,
+			"primary": true,
+			"unique": true,
+			"required": true,
+			"autoIncrement": true,
+			"component": "input"
+		},
+		{
+			"name": "id_user",
+			"type": "number",
+			"read": true,
+			"write": true,
+			"unique": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "email",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "id_profile",
+			"type": "number",
+			"read": true,
+			"write": true,
+			"unique": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "name",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "surname",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "company",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "division",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "contact",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "created",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"component": "datePicker"
+		},
+		{
+			"name": "updated",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"component": "datePicker"
+		},
+		{
+			"name": "deleted",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"component": "datePicker"
+		}
+	],
+	"relations": [],
+	"queries": []
+}

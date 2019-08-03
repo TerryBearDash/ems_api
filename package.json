@@ -1,0 +1,17 @@
+{
+	"name": "ems-rail",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "materia start"
+	},
+	"dependencies": {
+		"@materia/mailjet": "^1.0.0-rc.1",
+		"@materia/server": ">=1.0.0-beta.1",
+		"@materia/users": "^1.0.0-rc.1"
+	},
+	"author": "",
+	"license": "MIT",
+	"devDependencies": {}
+}

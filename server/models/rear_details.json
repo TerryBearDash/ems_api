@@ -1,0 +1,78 @@
+{
+	"id": "8dd25f06-2807-4a15-a165-4b6f5fe3b130",
+	"fields": [
+		{
+			"name": "id_rear_details",
+			"type": "number",
+			"read": true,
+			"write": false,
+			"primary": true,
+			"unique": true,
+			"required": true,
+			"autoIncrement": true,
+			"component": "input"
+		},
+		{
+			"name": "lat",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "long",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "speed",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "volts",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "signal",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "pressure",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "input"
+		},
+		{
+			"name": "created",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"component": "datePicker"
+		}
+	],
+	"relations": [
+		{
+			"type": "belongsTo",
+			"field": "id_rear",
+			"reference": {
+				"entity": "rear",
+				"field": "id_rear"
+			}
+		}
+	],
+	"queries": []
+}

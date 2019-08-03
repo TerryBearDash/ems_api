@@ -1,0 +1,34 @@
+{
+	"name": "EMS Rail",
+	"icon": "deep-orange-400",
+	"server": {
+		"host": "localhost",
+		"port": 8080,
+		"ssl": true
+	},
+	"database": {
+		"type": "postgres",
+		"host": "festino-ems-postgres-server.postgres.database.azure.com",
+		"port": 5432,
+		"database": "ems",
+		"username": "tertius@festino-ems-postgres-server",
+		"password": "R00T@admin123"
+	},
+	"links": [],
+	"client": {
+		"www": "client"
+	},
+	"addons": {
+		"@materia/users": {
+			"method": "token",
+			"user_profile_enabled": true,
+			"user_profile_entity": "profile"
+		},
+		"@materia/mailjet": {
+			"apikey": "219464ce893bd83989a277accf6afc5c",
+			"secret": "19eb443ad8b04faa80481090515325cf",
+			"from": "info@emsind.com",
+			"name": "Lee at EMS Railtech"
+		}
+	}
+}

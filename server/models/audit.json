@@ -1,0 +1,58 @@
+{
+	"id": "7a4040ef-a821-4fc7-8059-bd4a9b2a0a09",
+	"fields": [
+		{
+			"name": "id_audit",
+			"type": "number",
+			"read": true,
+			"write": false,
+			"primary": true,
+			"unique": true,
+			"required": true,
+			"autoIncrement": true,
+			"component": "input"
+		},
+		{
+			"name": "method",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "url",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "data",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "time",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "datePicker"
+		},
+		{
+			"name": "id_user",
+			"type": "number",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		}
+	],
+	"relations": [],
+	"queries": []
+}

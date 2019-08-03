@@ -1,0 +1,531 @@
+[
+	{
+		"method": "get",
+		"url": "/profiles/:id_profile",
+		"query": {
+			"entity": "profile",
+			"id": "get"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/profiles",
+		"query": {
+			"entity": "profile",
+			"id": "create"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "put",
+		"url": "/profiles/:id_profile",
+		"query": {
+			"entity": "profile",
+			"id": "update"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "delete",
+		"url": "/profiles/:id_profile",
+		"query": {
+			"entity": "profile",
+			"id": "delete"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/locomotives",
+		"query": {
+			"entity": "locomotives",
+			"id": "list"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/locomotives/:id_locomotives",
+		"query": {
+			"entity": "locomotives",
+			"id": "get"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/locomotives",
+		"query": {
+			"entity": "locomotives",
+			"id": "create"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "put",
+		"url": "/locomotives/:id_locomotives",
+		"query": {
+			"entity": "locomotives",
+			"id": "update"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "delete",
+		"url": "/locomotives/:id_locomotives",
+		"query": {
+			"entity": "locomotives",
+			"id": "delete"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/tritons",
+		"query": {
+			"entity": "triton",
+			"id": "list"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/tritons/:id_triton",
+		"query": {
+			"entity": "triton",
+			"id": "get"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/tritons",
+		"query": {
+			"entity": "triton",
+			"id": "create"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "put",
+		"url": "/tritons/:id_triton",
+		"query": {
+			"entity": "triton",
+			"id": "update"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "delete",
+		"url": "/tritons/:id_triton",
+		"query": {
+			"entity": "triton",
+			"id": "delete"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/rears",
+		"query": {
+			"entity": "rear",
+			"id": "list"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/rears/:id_rear",
+		"query": {
+			"entity": "rear",
+			"id": "get"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/rears",
+		"query": {
+			"entity": "rear",
+			"id": "create"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "put",
+		"url": "/rears/:id_rear",
+		"query": {
+			"entity": "rear",
+			"id": "update"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "delete",
+		"url": "/rears/:id_rear",
+		"query": {
+			"entity": "rear",
+			"id": "delete"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/rear_details",
+		"query": {
+			"entity": "rear_details",
+			"id": "list"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/rear_details/:id_rear_details",
+		"query": {
+			"entity": "rear_details",
+			"id": "get"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/rear_details",
+		"query": {
+			"entity": "rear_details",
+			"id": "create"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "put",
+		"url": "/rear_details/:id_rear_details",
+		"query": {
+			"entity": "rear_details",
+			"id": "update"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "delete",
+		"url": "/rear_details/:id_rear_details",
+		"query": {
+			"entity": "rear_details",
+			"id": "delete"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/triton_details",
+		"query": {
+			"entity": "triton_details",
+			"id": "list"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/triton_details/:id_triton_details",
+		"query": {
+			"entity": "triton_details",
+			"id": "get"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/triton_details",
+		"query": {
+			"entity": "triton_details",
+			"id": "create"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "put",
+		"url": "/triton_details/:id_triton_details",
+		"query": {
+			"entity": "triton_details",
+			"id": "update"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "delete",
+		"url": "/triton_details/:id_triton_details",
+		"query": {
+			"entity": "triton_details",
+			"id": "delete"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/deleted_users",
+		"query": {
+			"entity": "deleted_users",
+			"id": "list"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/deleted_users",
+		"query": {
+			"entity": "deleted_users",
+			"id": "create"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/audits",
+		"query": {
+			"entity": "audit",
+			"id": "list"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/audits",
+		"query": {
+			"entity": "audit",
+			"id": "create"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/supports",
+		"query": {
+			"entity": "support",
+			"id": "list"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/supports/:id_support",
+		"query": {
+			"entity": "support",
+			"id": "get"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/supports",
+		"query": {
+			"entity": "support",
+			"id": "create"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "put",
+		"url": "/supports/:id_support",
+		"query": {
+			"entity": "support",
+			"id": "update"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "delete",
+		"url": "/supports/:id_support",
+		"query": {
+			"entity": "support",
+			"id": "delete"
+		},
+		"permissions": [
+			"Authenticated"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/swagger/docs",
+		"controller": "swagger",
+		"action": "getSwaggerDocs",
+		"permissions": [
+			"Anyone"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/lee/profiles",
+		"controller": "swagger",
+		"action": "getProfiles",
+		"permissions": [
+			"Anyone"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/profiles",
+		"query": {
+			"entity": "profile",
+			"id": "list"
+		},
+		"permissions": [
+			"Anyone"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/admin/user/list",
+		"query": {
+			"entity": "profile",
+			"id": "userforedit"
+		},
+		"permissions": [
+			"Anyone"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/user/roles",
+		"query": {
+			"entity": "user_role",
+			"id": "list"
+		},
+		"permissions": [
+			"Anyone"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/admin/create/role",
+		"query": {
+			"entity": "user_role",
+			"id": "create"
+		},
+		"permissions": [
+			"Anyone"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/admin/permission/user/create",
+		"query": {
+			"entity": "user_permission",
+			"id": "create"
+		},
+		"permissions": [
+			"Anyone"
+		]
+	},
+	{
+		"method": "post",
+		"url": "/update/user",
+		"controller": "user",
+		"action": "postUpdateUser",
+		"permissions": [
+			"Anyone"
+		]
+	},
+	{
+		"method": "get",
+		"url": "/logs",
+		"query": {
+			"entity": "log",
+			"id": "list"
+		}
+	},
+	{
+		"method": "post",
+		"url": "/logs",
+		"controller": "logs",
+		"action": "postLogs",
+		"params": [
+			{
+				"name": "data",
+				"type": "text",
+				"required": false,
+				"component": "textarea",
+				"reference": {
+					"entity": "log",
+					"field": "data"
+				}
+			}
+		],
+		"permissions": [
+			"Anyone"
+		]
+	}
+]

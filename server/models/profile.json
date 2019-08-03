@@ -1,0 +1,231 @@
+{
+	"id": "df70e91a-a593-4f03-b90f-0d1a81e58370",
+	"fields": [
+		{
+			"name": "id_profile",
+			"type": "number",
+			"read": true,
+			"write": false,
+			"primary": true,
+			"unique": true,
+			"required": true,
+			"autoIncrement": true,
+			"component": "input"
+		},
+		{
+			"name": "name",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "surname",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "company",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "division",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "contact",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "status",
+			"type": "boolean",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "switch"
+		},
+		{
+			"name": "created",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "datePicker"
+		},
+		{
+			"name": "updated",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "datePicker"
+		},
+		{
+			"name": "id_user",
+			"type": "number",
+			"read": true,
+			"write": true,
+			"unique": true,
+			"required": true,
+			"component": "input"
+		}
+	],
+	"relations": [
+		{
+			"type": "belongsTo",
+			"field": "id_user",
+			"unique": true,
+			"reference": {
+				"entity": "user",
+				"field": "id_user"
+			}
+		},
+		{
+			"type": "hasMany",
+			"reference": {
+				"entity": "support",
+				"field": "id_profile"
+			}
+		}
+	],
+	"queries": [
+		{
+			"id": "getByUserId",
+			"type": "findOne",
+			"opts": {
+				"conditions": [
+					{
+						"name": "id_user",
+						"operator": "=",
+						"value": "=id_user"
+					}
+				]
+			}
+		},
+		{
+			"id": "getfullprofile",
+			"type": "findOne",
+			"opts": {
+				"include": [
+					{
+						"entity": "support",
+						"fields": [
+							"id_support",
+							"type",
+							"messgae",
+							"status",
+							"created",
+							"id_profile"
+						]
+					},
+					{
+						"entity": "user",
+						"fields": [
+							"id_user",
+							"email",
+							"password",
+							"verified",
+							"new_email",
+							"key_email",
+							"key_password"
+						],
+						"include": [
+							{
+								"entity": "social_account",
+								"fields": [
+									"id_social_account",
+									"social_user_id",
+									"provider",
+									"access_token",
+									"refresh_token",
+									"id_user"
+								]
+							}
+						]
+					}
+				],
+				"select": [
+					"id_profile",
+					"name",
+					"surname",
+					"company",
+					"division",
+					"contact",
+					"status",
+					"created",
+					"updated",
+					"id_user"
+				],
+				"conditions": [
+					{
+						"name": "id_profile",
+						"operator": "=",
+						"value": "=id_profile"
+					}
+				]
+			}
+		},
+		{
+			"id": "userforedit",
+			"type": "findAll",
+			"opts": {
+				"select": [
+					"id_profile",
+					"name",
+					"surname",
+					"company",
+					"division",
+					"contact",
+					"status",
+					"created",
+					"updated",
+					"id_user"
+				],
+				"conditions": [],
+				"include": [
+					{
+						"entity": "user",
+						"fields": [
+							"id_user",
+							"email",
+							"verified"
+						],
+						"include": [
+							{
+								"entity": "user_role",
+								"fields": [
+									"role",
+									"description"
+								]
+							}
+						]
+					}
+				],
+				"limit": 100,
+				"page": 1,
+				"orderBy": [
+					{
+						"field": "id_user",
+						"desc": false
+					}
+				]
+			}
+		}
+	]
+}

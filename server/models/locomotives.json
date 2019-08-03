@@ -1,0 +1,73 @@
+{
+	"id": "9265d4a5-5378-468f-843a-58885e8a0c9a",
+	"fields": [
+		{
+			"name": "id_locomotives",
+			"type": "number",
+			"read": true,
+			"write": false,
+			"primary": true,
+			"unique": true,
+			"required": true,
+			"autoIncrement": true,
+			"component": "input"
+		},
+		{
+			"name": "loco_number",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "triton",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "rear",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "created",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "updated",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		}
+	],
+	"relations": [
+		{
+			"type": "hasOne",
+			"reference": {
+				"entity": "rear",
+				"field": "id_locomotives"
+			}
+		},
+		{
+			"type": "hasOne",
+			"reference": {
+				"entity": "triton",
+				"field": "id_locomotives"
+			}
+		}
+	],
+	"queries": []
+}

@@ -1,0 +1,25 @@
+{
+	"id": "e5a5553b-cba9-43f6-aabf-ce21ab5b06b7",
+	"fields": [
+		{
+			"name": "id_log",
+			"type": "number",
+			"read": true,
+			"write": false,
+			"primary": true,
+			"unique": true,
+			"required": true,
+			"autoIncrement": true,
+			"component": "input"
+		},
+		{
+			"name": "data",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"component": "textarea"
+		}
+	],
+	"relations": [],
+	"queries": []
+}

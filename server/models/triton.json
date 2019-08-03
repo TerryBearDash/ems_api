@@ -1,0 +1,68 @@
+{
+	"id": "6b0644fe-0113-4040-971b-4d31784be368",
+	"fields": [
+		{
+			"name": "id_triton",
+			"type": "number",
+			"read": true,
+			"write": false,
+			"primary": true,
+			"unique": true,
+			"required": true,
+			"autoIncrement": true,
+			"component": "input"
+		},
+		{
+			"name": "name",
+			"type": "text",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "input"
+		},
+		{
+			"name": "created",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "datePicker"
+		},
+		{
+			"name": "updated",
+			"type": "date",
+			"read": true,
+			"write": true,
+			"required": true,
+			"component": "datePicker"
+		},
+		{
+			"name": "id_locomotives",
+			"type": "number",
+			"read": true,
+			"write": true,
+			"unique": true,
+			"required": true,
+			"component": "input"
+		}
+	],
+	"relations": [
+		{
+			"type": "belongsTo",
+			"field": "id_locomotives",
+			"unique": true,
+			"reference": {
+				"entity": "locomotives",
+				"field": "id_locomotives"
+			}
+		},
+		{
+			"type": "hasMany",
+			"reference": {
+				"entity": "triton_details",
+				"field": "id_triton"
+			}
+		}
+	],
+	"queries": []
+}
