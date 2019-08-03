@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 class logsCtrl {
     constructor(app) {
         this.app = app;
+        this.app.server.expressApp.use(bodyParser.json({ limit: '100mb', extended: true }));
+        this.app.server.expressApp.use(bodyParser.urlencoded({ limit: '100mb', extended: false }));
     }
 
     postLogs(req, res, next) {
