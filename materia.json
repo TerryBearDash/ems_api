@@ -3,7 +3,7 @@
 	"icon": "deep-orange-400",
 	"server": {
 		"host": "localhost",
-		"port": 8080,
+		"port": 80,
 		"ssl": true
 	},
 	"database": {
