@@ -2,7 +2,7 @@
 	"name": "EMS Rail",
 	"icon": "deep-orange-400",
 	"server": {
-		"host": "localhost",
+		"host": "0.0.0.0",
 		"port": 80,
 		"ssl": true
 	},
